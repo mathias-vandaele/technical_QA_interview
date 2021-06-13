@@ -56,7 +56,7 @@ You must use the `PageObject` model. here is the documentation https://www.selen
 
 ## RUN THE PROJECT
 
-you just have to run the main with specific environment variable
+you just have to run the main ine the `example` module with specifics environments variable
 
 `feature=example/features;report=example/report;configuration=example/configuration/services.xml;CUCUMBER_PUBLISH_ENABLED=true`
 
