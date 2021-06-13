@@ -2,9 +2,9 @@ package com.capitoleconsulting.technicalqainterview.testengine.core;
 
 import com.capitoleconsulting.technicalqainterview.testengine.models.Configurator;
 import lombok.Getter;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
