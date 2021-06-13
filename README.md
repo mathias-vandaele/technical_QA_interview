@@ -5,7 +5,9 @@ Capitole Consulting technical QA interview (Java/Selenium/Cucumber)
 This test aims to see your skills and what you are capable to implement using the given tools
 
 Be aware that you must be comfortable with abstraction, inheritance etc .. 
+
 For cucumber, you must be able to implement simple simple, make API calls using the given tools
+
 For selenium, you must be able to interact with a simple page and verify the presence of an element
 
 ## Understand the topic
