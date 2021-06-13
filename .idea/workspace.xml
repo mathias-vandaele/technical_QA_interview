@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b06551d-5a6a-4d1e-b6b5-4c7a338d201c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/interfaces/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/models/DefaultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/okttp3custominterceptors/CurlLoggingInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/okttp3custominterceptors/ResponseInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/core/TestEngine.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/utils/RestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testengine/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/configs/services.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/features/CoinGeckoFeature.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/features/CoinPaprikaFeature.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/features/GoogleCheck.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/example/controllers/CoinGeckoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/example/controllers/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/example/core/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/example/libraries/CommonLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/constants/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/core/DefaultService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/models/Configurator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/models/ServiceInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/utils/XMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/interfaces/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/interfaces/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/models/DefaultService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/okttp3custominterceptors/CurlLoggingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/okttp3custominterceptors/CurlLoggingInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/okttp3custominterceptors/ResponseInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/okttp3custominterceptors/ResponseInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/core/TestEngine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/core/TestEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/utils/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/utils/RestClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +47,56 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tnINzy7T2nNtOTtDeXhsrrB49C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/example" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.capitoleconsulting.technicalqainterview.testengine.utils" />
+      <recent name="com.capitoleconsulting.technicalqainterview.testengine.models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$/testengine/src/main/java/com/capitoleconsulting/technicalqainterview" />
       <recent name="$PROJECT_DIR$/testengine/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.capitoleconsulting.utils" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main Example" type="Application" factoryName="Application" temporary="true">
+      <envs>
+        <env name="feature" value="example/features" />
+        <env name="report" value="example/report" />
+        <env name="configuration" value="example/configuration/services.xml" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.capitoleconsulting.technicalqainterview.testengine.example.core.Main" />
+      <module name="example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capitoleconsulting.technicalqainterview.testengine.example.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main Example" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,5 +108,16 @@
       <updated>1623398392520</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example/src/main/java/com/capitoleconsulting/technicalqainterview/testengine/example/core/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

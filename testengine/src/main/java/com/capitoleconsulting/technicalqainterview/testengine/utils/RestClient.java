@@ -1,7 +1,7 @@
-package com.capitoleconsulting.technicalqainterview.utils;
+package com.capitoleconsulting.technicalqainterview.testengine.utils;
 
-import com.capitoleconsulting.technicalqainterview.okttp3custominterceptors.CurlLoggingInterceptor;
-import com.capitoleconsulting.technicalqainterview.okttp3custominterceptors.ResponseInterceptor;
+import com.capitoleconsulting.technicalqainterview.testengine.okttp3custominterceptors.CurlLoggingInterceptor;
+import com.capitoleconsulting.technicalqainterview.testengine.okttp3custominterceptors.ResponseInterceptor;
 import okhttp3.*;
 
 import java.io.IOException;
