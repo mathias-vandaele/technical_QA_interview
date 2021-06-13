@@ -54,6 +54,13 @@ Here will be verified if you're confortable using Selenium, the UiController is 
 
 You must use the `PageObject` model. here is the documentation https://www.selenium.dev/documentation/en/guidelines_and_recommendations/page_object_models/
 
+## RUN THE PROJECT
+
+you just have to run the main with specific environment variable
+
+`feature=example/features;report=example/report;configuration=example/configuration/services.xml;CUCUMBER_PUBLISH_ENABLED=true`
+
+Those are where your features are stored, where the report will be generated, and where the configuration (service_url etc ..) should be retrieved 
 
 ## Don't feel bad !
 
