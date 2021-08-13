@@ -1,4 +1,4 @@
-# technical_QA_interview
+# Technical_QA_interview
 
 Capitole Consulting technical QA interview (Java/Selenium/Cucumber)
 
