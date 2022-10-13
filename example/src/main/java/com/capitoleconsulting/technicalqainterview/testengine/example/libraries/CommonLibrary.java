@@ -1,18 +1,20 @@
 package com.capitoleconsulting.technicalqainterview.testengine.example.libraries;
 
 import com.capitoleconsulting.technicalqainterview.testengine.example.controllers.CommonController;
+import com.capitoleconsulting.technicalqainterview.testengine.example.core.Main;
 import com.capitoleconsulting.technicalqainterview.testengine.example.model.CoinGeckoInfo;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.junit.Assert;
 
 public class CommonLibrary {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    private static final Logger logger = LogManager.getLogger(CommonLibrary.class);
     private final CommonController commonController;
 
     private final CoinGeckoInfo coinGeckoInfo;
@@ -24,13 +26,13 @@ public class CommonLibrary {
 
     @Before
     public void beforeTests(Scenario scenario){
-        LOGGER.info("Hello, here is the beginning of our coin gecko test : {}", scenario.getName());
+        logger.info("Hello, here is the beginning of our coin gecko test : {}", scenario.getName());
     }
 
     @Given("Connexion to CoinGecko ok")
     public void connexionToCoinGeckoOk()
     {
-        LOGGER.info("checking if we can access to CoinGecko");
+        logger.info("checking if we can access to CoinGecko");
         Assert.assertEquals(200 , this.commonController.getCoinGeckoController().pingService().code());
     }
 

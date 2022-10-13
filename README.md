@@ -6,7 +6,7 @@ This test aims to evaluate your skills and what are you capable of implementing 
 
 Be aware that you must be comfortable with OOP concepts. 
 
-Regarding Cucumber, you will be requested to implement simple ????? and make API calls using provided tools.
+Regarding Cucumber, you will be requested to implement simple tests and make API calls using provided tools.
 
 Regarding Selenium, you will be requested to interact with a simple page and verify the presence of a specific element.
 

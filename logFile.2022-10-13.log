@@ -1,0 +1,28 @@
+100  [main] INFO  c.c.t.testengine.example.core.Main - Setting all the configuration for the test batch ...
+109  [main] INFO  c.c.t.testengine.core.TestEngine - Starting ...
+334  [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Monero coin is listed
+337  [main] INFO  c.c.t.t.e.libraries.CommonLibrary - checking if we can access to CoinGecko
+401  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ================== BEGIN REQUEST ==================
+402  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ╭--- cURL (https://api.coingecko.com/api/v3/ping)
+402  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - curl -X GET https://api.coingecko.com/api/v3/ping
+402  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ╰--- (copy and paste the above line to a terminal)
+2550 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ╭--- RESPONSE (200) --- 
+2550 [main] INFO  c.c.t.t.o.ResponseInterceptor -    {"gecko_says":"(V3)TotheMoon!"}
+2551 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ╰------------------------------------------
+2551 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ================== END REQUEST ====================
+2559 [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Monero coin is listed
+2566 [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Wikipedia knows about our code
+98   [main] INFO  c.c.t.testengine.example.core.Main - Setting all the configuration for the test batch ...
+107  [main] INFO  c.c.t.testengine.core.TestEngine - Starting ...
+338  [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Monero coin is listed
+341  [main] INFO  c.c.t.t.e.libraries.CommonLibrary - checking if we can access to CoinGecko
+410  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ================== BEGIN REQUEST ==================
+412  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ╭--- cURL (https://api.coingecko.com/api/v3/ping)
+412  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - curl -X GET https://api.coingecko.com/api/v3/ping
+412  [main] INFO  c.c.t.t.o.CurlLoggingInterceptor - ╰--- (copy and paste the above line to a terminal)
+2468 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ╭--- RESPONSE (200) --- 
+2469 [main] INFO  c.c.t.t.o.ResponseInterceptor -    {"gecko_says":"(V3)TotheMoon!"}
+2469 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ╰------------------------------------------
+2469 [main] INFO  c.c.t.t.o.ResponseInterceptor -    ================== END REQUEST ====================
+2481 [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Monero coin is listed
+2490 [main] INFO  c.c.t.t.e.libraries.CommonLibrary - Hello, here is the beginning of our coin gecko test : Check if Wikipedia knows about our code

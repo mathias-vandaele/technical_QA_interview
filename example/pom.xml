@@ -12,12 +12,6 @@
     <artifactId>example</artifactId>
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.30</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.capitole-consulting</groupId>
             <artifactId>testengine</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -42,8 +36,8 @@
     </dependencies>
 
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
 </project>

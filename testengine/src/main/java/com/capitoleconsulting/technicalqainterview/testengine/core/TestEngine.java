@@ -3,19 +3,21 @@ package com.capitoleconsulting.technicalqainterview.testengine.core;
 import com.capitoleconsulting.technicalqainterview.testengine.models.Configurator;
 import lombok.Getter;
 
-import org.slf4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TestEngine {
+
+    private static final Logger logger = LogManager.getLogger(TestEngine.class);
     @Getter private static final TestEngine INSTANCE = new TestEngine();
-    private static final Logger LOGGER = LoggerFactory.getLogger(TestEngine.class);
     @Getter private Configurator configurator;
 
     public static void start(Configurator configurator){
-        LOGGER.info("Starting ...");
+        logger.info("Starting ...");
         INSTANCE.configurator = configurator;
         INSTANCE._runTests();
     }

@@ -2,7 +2,8 @@ package com.capitoleconsulting.technicalqainterview.testengine.okttp3custominter
 
 import okhttp3.*;
 import okio.Buffer;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class CurlLoggingInterceptor implements Interceptor {
-    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    private static final Logger logger = LogManager.getLogger(CurlLoggingInterceptor.class);
     private String curlOptions;
     private static final Charset UTF8 = StandardCharsets.UTF_8;
 
@@ -28,7 +29,7 @@ public class CurlLoggingInterceptor implements Interceptor {
             return chain.proceed(request);
         }
 
-        LOGGER.info("================== BEGIN REQUEST ==================");
+        logger.info("================== BEGIN REQUEST ==================");
         boolean compressed = false;
 
         String curlCmd = "curl";
@@ -66,9 +67,9 @@ public class CurlLoggingInterceptor implements Interceptor {
 
         curlCmd += ((compressed) ? " --compressed " : " ") + request.url();
 
-        LOGGER.info("╭--- cURL (" + request.url() + ")");
-        LOGGER.info(curlCmd);
-        LOGGER.info("╰--- (copy and paste the above line to a terminal)");
+        logger.info("╭--- cURL (" + request.url() + ")");
+        logger.info(curlCmd);
+        logger.info("╰--- (copy and paste the above line to a terminal)");
 
         return chain.proceed(request);
     }

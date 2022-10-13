@@ -1,7 +1,8 @@
 package com.capitoleconsulting.technicalqainterview.testengine.okttp3custominterceptors;
 
 import okhttp3.*;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class ResponseInterceptor implements Interceptor {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    private static final Logger logger = LogManager.getLogger(ResponseInterceptor.class);
 
     @Override
     public Response intercept(Chain chain) throws IOException {
@@ -23,10 +24,10 @@ public class ResponseInterceptor implements Interceptor {
         String bodyString = response.body().string();
         int statusCode = response.code();
 
-        LOGGER.info("   ╭--- RESPONSE (" + response.code() + ") --- "  );
-        LOGGER.info( "   " + bodyString.replaceAll("(\\r|\\n| )", ""));
-        LOGGER.info("   ╰------------------------------------------");
-        LOGGER.info("   ================== END REQUEST ====================");
+        logger.info("   ╭--- RESPONSE (" + response.code() + ") --- "  );
+        logger.info( "   " + bodyString.replaceAll("(\\r|\\n| )", ""));
+        logger.info("   ╰------------------------------------------");
+        logger.info("   ================== END REQUEST ====================");
 
         ResponseBody newResponseBody = ResponseBody.create(contentType, bodyString);
         return response.newBuilder().code(statusCode).body(newResponseBody).build();
